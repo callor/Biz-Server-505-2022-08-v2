@@ -9,7 +9,7 @@
  		SELECT * FROM tbl_todoList
  	</select>
  	<select id="findByUsername">
- 		SELECT * FROM tbl_todoList WHERE username = #{username}
+ 		SELECT * FROM tbl_todoList WHERE t_username = #{username}
  	</select>
  	<select id="findById" resultType="UserVO">
  		SELECT * FROM tbl_todolist WHERE t_seq = #{t_seq}
@@ -29,7 +29,7 @@
  	<select id="create_todo_table">
  		CREATE TABLE IF NOT EXISTS tbl_todolist (
  			t_seq BIGINT AUTO_INCREMENT PRIMARY KEY,
-		    t_usename VARCHAR(20) NOT NULL,
+		    t_username VARCHAR(20) NOT NULL,
 		    t_sdate VARCHAR(10) NOT NULL,
 		    t_stime VARCHAR(10) NOT NULL,
 		    t_edate VARCHAR(10),
