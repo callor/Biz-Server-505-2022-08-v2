@@ -24,6 +24,7 @@
 	</beans:bean>
 	
 	<tx:annotation-driven/>
-	
+	<context:component-scan base-package="com.callor.todo.controller"/>
+	<context:component-scan base-package="com.callor.todo.service.impl"/>
 	
 </beans:beans>
