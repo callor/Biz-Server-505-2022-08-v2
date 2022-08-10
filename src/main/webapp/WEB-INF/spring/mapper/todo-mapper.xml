@@ -8,10 +8,10 @@
  	<select id="selectAll">
  		SELECT * FROM tbl_todoList
  	</select>
- 	<select id="findByUsername">
+ 	<select id="findByUsername" resultType="TodoVO">
  		SELECT * FROM tbl_todoList WHERE t_username = #{username}
  	</select>
- 	<select id="findById" resultType="UserVO">
+ 	<select id="findById" resultType="TodoVO">
  		SELECT * FROM tbl_todolist WHERE t_seq = #{t_seq}
  	</select>
  	<insert id="insert">
